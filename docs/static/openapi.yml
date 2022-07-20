@@ -29809,6 +29809,38 @@ paths:
           format: uint64
       tags:
         - Query
+  /ignite-tutorial-nel/ignitetutorialnel/hello:
+    get:
+      summary: Queries a list of Hello items.
+      operationId: IgnitetutorialnelIgnitetutorialnelHello
+      responses:
+        '200':
+          description: A successful response.
+          schema:
+            type: object
+            properties:
+              text:
+                type: string
+        default:
+          description: An unexpected error response.
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                format: int32
+              message:
+                type: string
+              details:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    '@type':
+                      type: string
+                  additionalProperties: {}
+      tags:
+        - Query
   /ignite-tutorial-nel/ignitetutorialnel/params:
     get:
       summary: Parameters queries the parameters of the module.
@@ -51555,6 +51587,11 @@ definitions:
   ignitetutorialnel.ignitetutorialnel.Params:
     type: object
     description: Params defines the parameters for the module.
+  ignitetutorialnel.ignitetutorialnel.QueryHelloResponse:
+    type: object
+    properties:
+      text:
+        type: string
   ignitetutorialnel.ignitetutorialnel.QueryParamsResponse:
     type: object
     properties:
