@@ -1,0 +1,14 @@
+syntax = "proto3";
+package ignitetutorialnel.ignitetutorialnel;
+
+import "gogoproto/gogo.proto";
+import "ignitetutorialnel/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "ignite-tutorial-nel/x/ignitetutorialnel/types";
+
+// GenesisState defines the ignitetutorialnel module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

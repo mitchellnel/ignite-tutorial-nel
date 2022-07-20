@@ -1,0 +1,13 @@
+syntax = "proto3";
+package ignitetutorialnel.ignitetutorialnel;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "ignite-tutorial-nel/x/ignitetutorialnel/types";
+
+// Msg defines the Msg service.
+service Msg {
+    // this line is used by starport scaffolding # proto/tx/rpc
+}
+
+// this line is used by starport scaffolding # proto/tx/message

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package ignitetutorialnel.ignitetutorialnel;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "ignite-tutorial-nel/x/ignitetutorialnel/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
